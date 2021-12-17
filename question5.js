@@ -3,10 +3,10 @@ var url = require("url");
 
 const server = http.createServer((req, res) => {
    if (req.url == "/hello") {
-      res.writeHead(200, { "Content-Type": "application/json" });
+      res.writeHead(200, { "Content-Type": "text/Html" });
       content = "Hello, world!";
    } else {
-      res.writeHead(404, { "Content-Type": "application/json" });
+      res.writeHead(404, { "Content-Type": "text/Html" });
       content = "Not found!";
    }
    res.write(content);
