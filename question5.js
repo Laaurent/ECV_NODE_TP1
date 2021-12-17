@@ -2,7 +2,6 @@ const http = require("http");
 var url = require("url");
 
 const server = http.createServer((req, res) => {
-   res.writeHead(200, { "Content-Type": "text/Html" });
    if (req.url == "/hello") {
       res.writeHead(200, { "Content-Type": "application/json" });
       content = "Hello, world!";
